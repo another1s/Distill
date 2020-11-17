@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ff4ce35-32cf-4f8e-81b7-e08de1a2a6ee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k6XPheqQbMkOf1R0IZku5FHxLc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/antidote" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\distill\rough\hit_style" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\distill\cwsmodel\pretrained\electra" />
+      <recent name="D:\distill\cwsmodel" />
+      <recent name="D:\distill" />
+      <recent name="D:\distill\data_dir" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.entrance">
+    <configuration name="data_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="distill" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rough" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rough/data_prepare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="electra_hit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="distill" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\distill\rough\hit_style\electra_hit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="entrance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="distill" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rough" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rough/entrance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="roberta_ner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="distill" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\distill\rough\hit_style\roberta_ner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="roberta_ner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="distill" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\distill\rough\hit_style\roberta_ner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.data_prepare" />
+      <item itemvalue="Python.electra_hit" />
+      <item itemvalue="Python.entrance" />
+      <item itemvalue="Python.roberta_ner" />
+      <item itemvalue="Python.roberta_ner (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.entrance" />
+        <item itemvalue="Python.electra_hit" />
+        <item itemvalue="Python.roberta_ner (1)" />
+        <item itemvalue="Python.roberta_ner" />
+        <item itemvalue="Python.data_prepare" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ff4ce35-32cf-4f8e-81b7-e08de1a2a6ee" name="Default Changelist" comment="" />
+      <created>1605021992041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605021992041</updated>
+      <workItem from="1605022000493" duration="6916000" />
+      <workItem from="1605063984507" duration="71975000" />
+      <workItem from="1605257400812" duration="13823000" />
+      <workItem from="1605373421278" duration="6724000" />
+      <workItem from="1605578758750" duration="14728000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="92" key="#Inspections" timestamp="1605578711549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="396" y="92" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1605578711549" />
+    <state x="225" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605577314073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="225" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605577314073" />
+    <state x="-21" y="411" width="1535" height="254" key="#xdebugger.XInspectDialog" timestamp="1605597599352">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-21" y="411" width="1535" height="254" key="#xdebugger.XInspectDialog/0.0.1536.824@0.0.1536.824" timestamp="1605597599351" />
+    <state width="1534" height="440" key="DebuggerActiveHint" timestamp="1605175114662">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1534" height="440" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605175114662" />
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1605584573867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605584573867" />
+    <state width="1480" height="219" key="GridCell.Tab.0.bottom" timestamp="1605597528524">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605597528524" />
+    <state width="1480" height="219" key="GridCell.Tab.0.center" timestamp="1605597528522">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605597528522" />
+    <state width="1480" height="219" key="GridCell.Tab.0.left" timestamp="1605597528521">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605597528521" />
+    <state width="1480" height="219" key="GridCell.Tab.0.right" timestamp="1605597528523">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605597528523" />
+    <state width="1480" height="219" key="GridCell.Tab.1.bottom" timestamp="1605597588456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605597588456" />
+    <state width="1480" height="219" key="GridCell.Tab.1.center" timestamp="1605597588456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605597588456" />
+    <state width="1480" height="219" key="GridCell.Tab.1.left" timestamp="1605597588456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605597588456" />
+    <state width="1480" height="219" key="GridCell.Tab.1.right" timestamp="1605597588456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1480" height="219" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605597588456" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1605095764064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605095764064" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1605174875194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1605174875194" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605248267388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605248267388" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>189</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/pycharm/miniconda/envs/hugg/Lib/site-packages/textbrewer/distiller_train.py</url>
+          <line>194</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rough/Roberta_ft.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rough/Roberta_ft.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rough/hit_style(demo)/modeling.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rough/hit_style(demo)/modeling.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/distill$roberta_ft.coverage" NAME="roberta_ft Coverage Results" MODIFIED="1605256669874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/distill$entrance.coverage" NAME="entrance Coverage Results" MODIFIED="1605597528296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rough" />
+    <SUITE FILE_PATH="coverage/distill$data_prepare.coverage" NAME="data_prepare Coverage Results" MODIFIED="1605234871539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rough" />
+    <SUITE FILE_PATH="coverage/distill$roberta_ner__1_.coverage" NAME="roberta_ner (1) Coverage Results" MODIFIED="1605256775151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/distill$electra_hit.coverage" NAME="electra_hit Coverage Results" MODIFIED="1605596182879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
