@@ -9,10 +9,10 @@ if __name__ == '__main__':
     # label type BIO, data set: ibo_char
 
     # training parameters
-    parameters = TrainingParameters(vocab_file='../cwsmodel/pretrained/Roberta/vocab.txt', output_dir='../output',
-                                    train_file='../cwsmodel/ibo_char_val.txt', eval_file='../cwsmodel/ibo_char_val.txt',
-                                    init_model_checkpoint='../cwsmodel/pretrained/Roberta/pytorch_model.bin',
-                                    model_config='../cwsmodel/pretrained/Roberta/config.json',
+    parameters = TrainingParameters(vocab_file='../models/pretrained/Roberta/vocab.txt', output_dir='../output',
+                                    train_file='../datasets/ner/ibo_char_val.txt', eval_file='../datasets/ner/ibo_char_val.txt',
+                                    init_model_checkpoint='../models/pretrained/Roberta/pytorch_model.bin',
+                                    model_config='../models/pretrained/Roberta/config.json',
                                     no_inputs_mask=True, no_logits=False, hidden_dropout_prob=0.1, task_type='CWS',
                                     hidden_size=1024)
 

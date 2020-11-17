@@ -6,9 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
-# model and dataset
-cwsmodel/
-dataset/
+# model and datasets
+models/
+datasets/
+
 
 # Distribution / packaging
 .Python

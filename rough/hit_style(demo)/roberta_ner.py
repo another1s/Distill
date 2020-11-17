@@ -45,7 +45,7 @@ def main():
     forward_batch_size = int(20/ 1)
 
 
-    bert_config_file_S = '../../cwsmodel/pretrained/Roberta/config.json'
+    bert_config_file_S = '../../models/pretrained/Roberta/config.json'
     output_encoded_layers = 'true'
     max_seq_length = 160
     #load bert config
@@ -61,12 +61,12 @@ def main():
     eval_dataset = None
     num_train_steps = None
 
-    vocab_file = '../../cwsmodel/pretrained/Roberta/vocab.txt'
+    vocab_file = '../../models/pretrained/Roberta/vocab.txt'
 
     tokenizer = BertTokenizer(vocab_file=vocab_file, do_lower_case=True)
 
-    train_file = '../../cwsmodel/ibo_char_train.txt'
-    predict_file = '../../cwsmodel/ibo_char_val.txt'
+    train_file = '../../datasets/ner/ibo_char_train.txt'
+    predict_file = '../../datasets/ner/ibo_char_val.txt'
 
     train_examples,train_dataset = read_features(train_file, tokenizer=tokenizer, max_seq_length=max_seq_length)
 
@@ -76,7 +76,7 @@ def main():
     model_S = BertForTokenClassification(bert_config_S)
     #Load student
 
-    init_checkpoint_S = './cwsmodel/pretrained/Roberta/pytorch_model.bin'
+    init_checkpoint_S = './models/pretrained/Roberta/pytorch_model.bin'
     assert init_checkpoint_S is not None
 
 

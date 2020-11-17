@@ -125,15 +125,15 @@ def read_features(input_file,  max_seq_length=160, tokenizer=None, cls_token='[C
 
 if __name__ == '__main__':
     from transformers import BertTokenizer
-    tokenizer = BertTokenizer(vocab_file='../../cwsmodel/pretrained/Roberta/vocab.txt')
+    tokenizer = BertTokenizer(vocab_file='../../models/pretrained/Roberta/vocab.txt')
 
-    input_file = '../../cwsmodel/ibo_char_train.txt'
+    input_file = '../../datasets/ner/ibo_char_train.txt'
     max_seq_length = 128
 
     dataset = read_features(input_file, 128,tokenizer)
-    #print (f"length of dataset: {len(dataset)}")
-    #print (dataset[0])
-    #print (dataset[-1])
+    #print (f"length of datasets: {len(datasets)}")
+    #print (datasets[0])
+    #print (datasets[-1])
 
     examples = read_examples(input_file)
     length = [len(example.tokens) for example in examples]
