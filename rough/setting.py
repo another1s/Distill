@@ -1,8 +1,4 @@
-
-import pickle
-import os
-from transformers import AdamW, get_constant_schedule_with_warmup, get_linear_schedule_with_warmup, BertTokenizer, get_constant_schedule, BertConfig
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler
+from transformers import AdamW, get_constant_schedule_with_warmup, get_linear_schedule_with_warmup, get_constant_schedule, BertConfig
 import logging
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)
@@ -34,8 +30,6 @@ def divide_parameters(named_parameters,lr=None):
     collected.extend(no_decay_names)
     assert len(param_group)>0
     return param_group, collected
-
-
 
 # general training parameters
 class TrainingParameters:

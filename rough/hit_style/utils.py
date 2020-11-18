@@ -1,5 +1,3 @@
-import pickle
-import os
 import logging
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)

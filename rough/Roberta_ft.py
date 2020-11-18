@@ -1,5 +1,5 @@
 from torch import nn
-from transformers import BertModel, BertConfig
+from transformers import BertModel, BertConfig, BertTokenizer
 from transformers.modeling_bert import BertPreTrainedModel
 
 
@@ -40,8 +40,6 @@ class BertForTokenClassification(BertPreTrainedModel):
                 loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
 
             output = (loss,) + output
-
-
 
         return output  # (loss), scores, (hidden_states), (attentions)
 

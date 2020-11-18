@@ -28,12 +28,13 @@ if __name__ == '__main__':
     print('unexpected_keys', unexpected_keys)
 
     tokenizer = BertTokenizer(vocab_file=parameters.vocab_file, do_lower_case=True)
-
+    label2id = DataConvert.label_switcher(task_type=parameters.task_type)
+    D = DataConvert(label2id_dict=label2id)
     # loading data
-    train_examples, train_dataset = DataConvert.read_features(parameters.train_file, tokenizer=tokenizer,
+    train_examples, train_dataset = D.read_features(parameters.train_file, tokenizer=tokenizer,
                                                              max_seq_length=parameters.max_seq_length)
 
-    eval_examples, eval_dataset = DataConvert.read_features(parameters.eval_file,tokenizer=tokenizer,
+    eval_examples, eval_dataset = D.read_features(parameters.eval_file,tokenizer=tokenizer,
                                                            max_seq_length=parameters.max_seq_length)
 
     # allocate parameters

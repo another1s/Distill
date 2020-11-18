@@ -87,6 +87,9 @@ class FeaturesGroup:
 #  2. 用dataloader方便深度模型处理
 #  3. label交叉标, 交叉标以后得分别存储
 class DataConvert:
+    def __init__(self, label2id_dict):
+        self.label2id_dict = label2id_dict
+
     @staticmethod
     def relabel(models, features_of_dataset, examples_of_dataset, batch_size=10):
         for model in models:
@@ -110,9 +113,22 @@ class DataConvert:
                             labelid_predict.append(labels_predicted)
                         for ind in range(len(labelid_predict)):
                             new_dataset_example[ind+step*batch_size].label_ids = labelid_predict[ind]
-                new_dataset_feature = DataConvert.example_to_features_easy(new_dataset_example)
+                label2id = DataConvert.label_switcher(model.task_type)
+                D = DataConvert(label2id_dict=label2id_dict)
+                new_dataset_feature = D.example_to_features_easy(new_dataset_example)
                 with open(model.task_type + '_' + dataset.name, 'wb') as f:
                     pickle.dump([new_dataset_example, new_dataset_feature], f)
+
+    @staticmethod
+    def label_switcher(task_type: str):
+        switcher = {
+            'NER': {'O': 0, 'B-LOC': 1, 'I-LOC': 2, 'B-ORG': 3, 'I-ORG': 4, 'B-PER': 5, 'I-PER': 6},
+            'CWS': {'P': 0, 'B':1, 'M':2, 'E':3, 'S':4},
+            'POS': {},
+            'DP':{}
+        }
+
+        return switcher[task_type]
 
     @staticmethod
     def read_examples(input_file):
@@ -140,10 +156,9 @@ class DataConvert:
         print("Num errors: ", errors)
         return examples
 
-    @staticmethod
-    def example_to_features_easy(examples, cls_token='[CLS]', sep_token='[SEP]', pad_token_id=0):
+    def example_to_features_easy(self, examples, cls_token='[CLS]', sep_token='[SEP]', pad_token_id=0):
         features = []
-        pad_label = [label2id_dict['O']]
+        pad_label = [self.label2id_dict['O']]
         for example in examples:
             tokens = [cls_token] + example.tokens[:max_seq_length - 2] + [sep_token]
             label_ids = pad_label + example.label_ids[:max_seq_length - 2] + pad_label
@@ -163,15 +178,15 @@ class DataConvert:
         return features
 
 
-    @staticmethod
-    def convert_example_to_features(input_file, tokenizer, max_seq_length,
+
+    def convert_example_to_features(self, input_file, tokenizer, max_seq_length,
                                     cls_token='[CLS]', sep_token='[SEP]', pad_token_id=0):
         features = []
 
         examples = DataConvert.read_examples(input_file)
 
         # convert token to ids
-        pad_label = [label2id_dict['O']]
+        pad_label = [self.label2id_dict['O']]
         for example in examples:
             tokens = [cls_token] + example.tokens[:max_seq_length - 2] + [sep_token]
             label_ids = pad_label + example.label_ids[:max_seq_length - 2] + pad_label
@@ -190,15 +205,14 @@ class DataConvert:
 
         return examples, features
 
-    @staticmethod
-    def read_features(input_file, max_seq_length=160, tokenizer=None, cls_token='[CLS]', sep_token='[SEP]',
+    def read_features(self, input_file, max_seq_length=160, tokenizer=None, cls_token='[CLS]', sep_token='[SEP]',
                       pad_token_id=0):
         cached_features_file = input_file + f'.cached_feat_{max_seq_length}'
         if os.path.exists(cached_features_file):
             with open(cached_features_file, 'rb') as f:
                 examples, features = pickle.load(f)
         else:
-            examples, features = DataConvert.convert_example_to_features(input_file, tokenizer, max_seq_length,
+            examples, features = self.convert_example_to_features(input_file, tokenizer, max_seq_length,
                                                                          cls_token,
                                                                          sep_token, pad_token_id)
             with open(cached_features_file, 'wb') as f:
@@ -219,13 +233,13 @@ if __name__ == '__main__':
 
     input_file = './models/ibo_char_train.txt'
     max_seq_length = 128
-
-    dataset = DataConvert.read_features(input_file, 128,tokenizer)
+    D = DataConvert(label2id_dict=label2id_dict)
+    dataset = D.read_features(input_file, 128,tokenizer)
     #print (f"length of datasets: {len(datasets)}")
     #print (datasets[0])
     #print (datasets[-1])
 
-    examples = DataConvert.read_examples(input_file)
+    examples = D.read_examples(input_file)
     length = [len(example.tokens) for example in examples]
     import numpy as np
     print (np.max(length),np.mean(length),np.percentile(length,99))
