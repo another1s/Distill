@@ -9,7 +9,10 @@ An easy deployed distillation scripts
     * Electra
     * Bert
 2. Distillation strategy
-    * teacher model output + intermediate layer + student output loss
+    * single teacher
+        * teacher model output + MSE(intermediate layers) + student output loss
+    * mul-ti teacher
+        * 
 3. Data Augmentation
     * 
 ## 

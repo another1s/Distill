@@ -3,11 +3,14 @@ import logging
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)
 
+
 def divide_parameters(named_parameters,lr=None):
-    no_decay = ['bias', 'LayerNorm.bias','LayerNorm.weight']
+    no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     decay_parameters_names = list(zip(*[(p,n) for n,p in named_parameters if not any((di in n) for di in no_decay)]))
     no_decay_parameters_names = list(zip(*[(p,n) for n,p in named_parameters if any((di in n) for di in no_decay)]))
     param_group = []
+    decay_names = None
+    no_decay_names = None
     if len(decay_parameters_names)>0:
         decay_parameters, decay_names = decay_parameters_names
         #print ("decay:",decay_names)
@@ -30,6 +33,7 @@ def divide_parameters(named_parameters,lr=None):
     collected.extend(no_decay_names)
     assert len(param_group)>0
     return param_group, collected
+
 
 # general training parameters
 class TrainingParameters:

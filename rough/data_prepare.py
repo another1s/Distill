@@ -3,26 +3,6 @@ import torch
 from torch.utils.data import TensorDataset
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 
-label2id_dict = {
-    'O': 0,
-    'B-LOC': 1,
-    'I-LOC': 2,
-    'B-ORG': 3,
-    'I-ORG': 4,
-    'B-PER': 5,
-    'I-PER': 6
-}
-
-id2label_dict = {
-    0: 'O',
-    1: 'B-LOC',
-    2: 'I-LOC',
-    3: 'B-ORG',
-    4: 'I-ORG',
-    5: 'B-PER',
-    6: 'I-PER'
-}
-
 
 class Examples:
     def __init__(self, tokens, label_ids):
@@ -90,8 +70,8 @@ class DataConvert:
     def __init__(self, label2id_dict):
         self.label2id_dict = label2id_dict
 
-    @staticmethod
-    def relabel(models, features_of_dataset, examples_of_dataset, batch_size=10):
+
+    def relabel(self, models, features_of_dataset, examples_of_dataset, batch_size=10):
         for model in models:
             for dataset, dataset_example in zip(features_of_dataset, examples_of_dataset):
                 new_dataset_example = dataset_example
@@ -114,7 +94,7 @@ class DataConvert:
                         for ind in range(len(labelid_predict)):
                             new_dataset_example[ind+step*batch_size].label_ids = labelid_predict[ind]
                 label2id = DataConvert.label_switcher(model.task_type)
-                D = DataConvert(label2id_dict=label2id_dict)
+                D = DataConvert(label2id_dict=self.label2id_dict)
                 new_dataset_feature = D.example_to_features_easy(new_dataset_example)
                 with open(model.task_type + '_' + dataset.name, 'wb') as f:
                     pickle.dump([new_dataset_example, new_dataset_feature], f)
@@ -123,15 +103,16 @@ class DataConvert:
     def label_switcher(task_type: str):
         switcher = {
             'NER': {'O': 0, 'B-LOC': 1, 'I-LOC': 2, 'B-ORG': 3, 'I-ORG': 4, 'B-PER': 5, 'I-PER': 6},
-            'CWS': {'P': 0, 'B':1, 'M':2, 'E':3, 'S':4},
-            'POS': {},
+            'CWS': {'P': 0, 'B': 1, 'M': 2, 'E': 3, 'S': 4},
+            'POS': {'ADJ': 0, 'ADP': 1, 'ADV': 2, 'AUX': 3, 'CONJ': 4, 'INTJ': 5, 'NOUN': 6, 'NUM': 7, 'DET': 8,
+                    'PART': 9, 'PRON': 10, 'PROPN': 11, 'PUNCT': 12, 'SCONJ': 13, 'SYM': 14, 'VERB': 15, 'X': 16,
+                    'LOC': 17, 'POS': 18},
             'DP':{}
         }
 
         return switcher[task_type]
 
-    @staticmethod
-    def read_examples(input_file):
+    def read_examples(self, input_file):
         examples = []
         tokens = []
         label_ids = []
@@ -150,7 +131,7 @@ class DataConvert:
                     errors += 1
                     continue
                 tokens.append(token)
-                label_ids.append(label2id_dict[label])
+                label_ids.append(self.label2id_dict[label])
             if len(tokens) > 0:
                 examples.append(Examples(tokens, label_ids))
         print("Num errors: ", errors)
@@ -183,7 +164,7 @@ class DataConvert:
                                     cls_token='[CLS]', sep_token='[SEP]', pad_token_id=0):
         features = []
 
-        examples = DataConvert.read_examples(input_file)
+        examples = self.read_examples(input_file)
 
         # convert token to ids
         pad_label = [self.label2id_dict['O']]
@@ -233,6 +214,7 @@ if __name__ == '__main__':
 
     input_file = './models/ibo_char_train.txt'
     max_seq_length = 128
+    label2id_dict = {'P': 0, 'B': 1, 'M': 2, 'E': 3, 'S': 4}
     D = DataConvert(label2id_dict=label2id_dict)
     dataset = D.read_features(input_file, 128,tokenizer)
     #print (f"length of datasets: {len(datasets)}")
