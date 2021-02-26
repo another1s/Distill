@@ -38,5 +38,10 @@
         除了这样一层对一层，也可以多层对一层
     * 中间层形状不一样：用一维的卷积核把老师模型的中间层降维即可（参考华为tinybert操作） 
     
-![Image text]()
+![Image text](https://github.com/another1s/Distill/blob/master/%E6%A8%A1%E5%9E%8B%E8%92%B8%E9%A6%8F%E8%B0%83%E5%8F%82%E4%BF%AE%E6%94%B9%E6%96%B9%E5%90%91.png)
 ## 蒸馏实验记录
+|          参数组合            | datasets included   |                          details                          |
+|:----------------------------|:-------------------:|:---------------------------------------------------------:|
+|   conllu(dependency parsing)| udtreebanks,wtb,udc | ID,FORM,LEMMA,CPOSTAG,POSTAG,FEATS,HEAD,DEPREL,DEPS,MISC  |
+|   baidu(lexical analysis)   |  lexical_data       | n,f,s,t,nr,nz,PER,LOC,ORG,TIME,c,u,xc,w,p,r,q,m,d,an,ad...| 
+|   ZX(lexical analysis)      |      ZX             |                  cannot find reference yet                |

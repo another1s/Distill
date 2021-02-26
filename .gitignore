@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# ide setting
+.idea
+
 # model and datasets
 models/
 datasets/

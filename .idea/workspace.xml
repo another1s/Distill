@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a6a4985-bc4c-4102-819f-b44aef74494e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/distill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/distill.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/Roberta_ft.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/TraditionalToSimple/langconv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/TraditionalToSimple/zh_wiki.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/data_prepare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/entrance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/eee.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/electra_hit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/modeling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/roberta_ner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/train_eval.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/hit_style/utils_ner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rough/setting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +194,7 @@
       <workItem from="1611303631087" duration="452000" />
       <workItem from="1612284586499" duration="732000" />
       <workItem from="1613706423664" duration="5905000" />
-      <workItem from="1614304778301" duration="9062000" />
+      <workItem from="1614304778301" duration="9448000" />
     </task>
     <servers />
   </component>
