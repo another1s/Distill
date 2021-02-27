@@ -40,10 +40,11 @@
     
 ![Image text](https://github.com/another1s/Distill/blob/master/%E6%A8%A1%E5%9E%8B%E8%92%B8%E9%A6%8F%E8%B0%83%E5%8F%82%E4%BF%AE%E6%94%B9%E6%96%B9%E5%90%91.png)
 ## 蒸馏实验记录
-|          模型的参数选取                             |       蒸馏设定       |         初始化方式                       |     
-|:-------------------------------------------------:|:-------------------:|:--------------------------------------:|
-|  T:Electra(24 layers), S:tinyElectra(12 layers)   |        10           |       预训练权重                         |
-|  T:Roberta-large(24 layers), S: Roberta(12 layers)|        10           |       预训练权重                         | 
-|  T:Roberta-large(24 layers), S: Roberta(12 layers)|        10           |       多任务模型的fine-tune权重           | 
-|  T:Roberta-large(24 layers), S: Roberta(6 layers) |        15           |       预训练权重                         |
-|  T:Roberta-large(12 layers), S: Roberta(4 layers) |        15           |       多任务模型的fine-tune权重           |
+
+|          模型的参数选取                             |       蒸馏设定       |         初始化方式                       |  产出模型表现     | 
+|:-------------------------------------------------:|:-------------------:|:--------------------------------------:|:---------------:|
+|  T:Electra(24 layers), S:tinyElectra(12 layers)   |        10           |       预训练权重                         |                 |
+|  T:Roberta-large(24 layers), S: Roberta(12 layers)|        10           |       预训练权重                         |                 |
+|  T:Roberta-large(24 layers), S: Roberta(12 layers)|        10           |       多任务模型的fine-tune权重           |                 |
+|  T:Roberta-large(24 layers), S: Roberta(6 layers) |        15           |       预训练权重                         |                 |
+|  T:Roberta-large(12 layers), S: Roberta(4 layers) |        15           |       多任务模型的fine-tune权重           |                 |
